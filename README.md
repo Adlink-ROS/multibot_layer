@@ -43,3 +43,6 @@ plugins:
 - {name: multibot_layer,     type: "multibot_layer_namespace::MultibotLayer"}
 
 ```
+
+## Try it yourself
+Follow the tutorial [here](https://github.com/airuchen/turtlebot3) to try out this plugin with multiple turtlebot3.
