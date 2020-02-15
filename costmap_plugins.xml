@@ -1,6 +1,6 @@
 <class_libraries>
   <library path="lib/libmultibot_layer">
-    <class type="multibot_layer_namespace::MultibotLayerg" base_class_type="costmap_2d::Layer">
+    <class type="multibot_layer_namespace::MultibotLayer" base_class_type="costmap_2d::Layer">
     </class>
   </library>
 </class_libraries>
