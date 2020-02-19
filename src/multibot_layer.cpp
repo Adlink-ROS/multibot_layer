@@ -38,18 +38,18 @@ PLUGINLIB_EXPORT_CLASS(multibot_layer_namespace::MultibotLayer, costmap_2d::Laye
 
 		// dummy search for five robots. TODO: set dynamic robot array
 		for (int i = 0; i < 5; i++) {
-			std::string robot_pose = "/tb3_";
+			std::string robot_pose = "/nb2_";
 			std::string robot_x;
 			std::string robot_y;
 			std::string this_bot;
-			// search for the full posename of the current robot. Eg, this_bot = "tb3_<current_robot_number>/pose_x".
+			// search for the full posename of the current robot. Eg, this_bot = "nb2_<current_robot_number>/pose_x".
 			nh.searchParam("pose_x", this_bot);  
 
 
-			robot_pose.append(std::to_string(i));  // set robot_pose to "/tb3_<i=1~5>"
+			robot_pose.append(std::to_string(i));  // set robot_pose to "/nb2_<i=1~5>"
 			robot_x = robot_y = robot_pose;  // give robot_x and robot_y the same prefix
-			robot_x.append("/pose_x");  // set robot_x to "/tb3_<i>/pose_x"
-			robot_y.append("/pose_y");  // set robot_y to "/tb3_<i>/pose_y"
+			robot_x.append("/pose_x");  // set robot_x to "/nb2_<i>/pose_x"
+			robot_y.append("/pose_y");  // set robot_y to "/nb2_<i>/pose_y"
 
 			// Save poses of every robot, except itself, in mark[][] array
 			if (nh.searchParam(robot_x, robot_x) && robot_x != this_bot) {
