@@ -11,7 +11,6 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES multibot_layers
   CATKIN_DEPENDS costmap_2d dynamic_reconfigure roscpp
-  DEPENDS system_lib
 )
 
 include_directories(
